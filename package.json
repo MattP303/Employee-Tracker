@@ -1,0 +1,27 @@
+{
+  "name": "employee-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "seed": "mysql -h 127.0.0.1 -u root employees_db < db/seed.sql",
+    "schema": "mysql -h 127.0.0.1 -u root employees_db < db/schema.sql"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattP303/Employee-Tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MattP303/Employee-Tracker/issues"
+  },
+  "homepage": "https://github.com/MattP303/Employee-Tracker#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^8.2.4",
+    "mysql2": "^2.3.3"
+  }
+}
